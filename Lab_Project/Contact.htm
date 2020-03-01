@@ -16,13 +16,40 @@
     <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
-<body>
+<body> 
 
   <div data-role="page" id="aboutPage">
     <!-- This is the header. -->
     <div data-role="header">
       <a href="index.htm" data-prefetch="true" rel="external" data-role="button">Home</a>
       <h1>Contact</h1>
+    </div>
+    
+    <div role="main" class="ui-content">
+      
+      <form action="echo.html" method="post">
+        
+      <div class="ui-field-contain">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" value=""  />
+      </div>	
+  
+      <div class="ui-field-contain">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" value=""  />
+      </div>
+
+      <div class="ui-field-contain">
+		    <label for="bio">Message:</label>
+		    <textarea name="bio" id="bio"></textarea>
+		  </div>	
+
+		  <div class="ui-field-contain">
+		    <input type="submit" name="submit" value="Send"  />
+      </div>
+      
+      </form>
+  
     </div>
        
     <div role="main" class="ui-content">
