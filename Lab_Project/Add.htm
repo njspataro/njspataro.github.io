@@ -29,6 +29,34 @@
             <li><a href="Companies.htm" data-prefetch="true" rel="external">Next</a></li>
         </ul>		
     </div>
+
+    <!--W9#4 This is the header. -->
+    <div role="main" class="ui-content">
+      <p>
+      This page has a shot form for submitting notes. 
+      Please use the "ADD NOTE" button to submit a note after filling out the form.
+      </p>
+
+      <form>
+          <div class="ui-field-contain">
+            <input id="title" type="text" placeholder="Add a note" />
+          </div>
+          <div class="ui-field-contain">
+            <textarea id="note" placeholder="The content of your note">
+            </textarea>
+          </div>
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <input id="btnNoThanks" type="submit" value="No Thanks" />
+            </div>
+            <div class="ui-block-b">
+              <input id="btnAddNote" type="button" value="Add Note" />
+            </div>
+          </div>
+        </form>
+    
+        <ul id="notesList" data-role="listview" data-inset="true"></ul>
+      </div>
     
     <!-- This is the footer. -->
     <div data-role="footer" data-position="fixed" data-fullscreen="true" >
