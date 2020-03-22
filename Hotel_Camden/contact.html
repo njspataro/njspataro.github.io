@@ -12,6 +12,7 @@
 <script type="text/javascript" 
         src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
 </script>
+<script src="js/config.js"></script>
 </head>
 
 <body>
@@ -45,7 +46,33 @@
 		<h4>&copy; Camden Hotel 2016</h4>
 	</div>
 		
+	<div role="main" class="ui-content" id="contentDiv">
+		
+		<input type="button" id="testBtn" value="Add A List">
+	</div>
+
 </div>
+
+<script>
+$("#testBtn").click(function() {
+	
+	var html="<ul data-role='listview' data-inset='true' id='theList'>"+
+	"<li>Item One</li><li>Item Two</li></ul>";
+	$("#contentDiv").append(html);
+	$("#theList").listview();
+
+});
+</script>
+
+
+
+
+<!--Wk10 #1-->
+<script>
+	$(window).bind("orientationchange", function(e, type) {
+		$("#status").html("Orientation changed to "+e.orientation);
+		});
+	</script>
 
 </body>
 </html>

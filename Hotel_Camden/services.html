@@ -12,6 +12,7 @@
 <script type="text/javascript" 
         src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
 </script>
+<script src="js/config.js"></script>
 </head>
 <body>
     <div data-role="page">
@@ -44,3 +45,11 @@
                     </ul>
                 </p>
             </div>
+            <!--Wk10 #1-->
+    <script>
+        $(window).bind("orientationchange", function(e, type) {
+            $("#status").html("Orientation changed to "+e.orientation);
+            });
+        </script>
+</body>
+</html>
