@@ -27,6 +27,7 @@
                 <li><a href="Careers.html" data-prefetch="true" rel="external">Careers</a></li>
                 <li><a href="services.html" data-prefetch="true" rel="external">Services</a></li>
                 <li><a href="contact.html" data-prefetch="true" rel="external">Contact Us</a></li>
+                <li><a href="Non-Mobile.html" data-prefetch="true" rel="external">Non-Mobile Page</a></li>
             </ul>		
           </div>
         <div role="main" class= "io-content">
@@ -54,5 +55,13 @@
             $("#status").html("Orientation changed to "+e.orientation);
             });
         </script>
+
+<script>
+$(document).on('pageinit', '.ui-page',function(event){
+    setTimeout(function () {
+        $('#popupBasic').popup('open');
+    }, 3); });
+</script>
+
 </body>
 </html>
