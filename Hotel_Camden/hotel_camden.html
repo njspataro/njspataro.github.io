@@ -49,6 +49,10 @@
     </div>
 
 
-
+    <script>
+        $(window).bind("orientationchange", function(e, type) {
+            $("#status").html("Orientation changed to "+e.orientation);
+            });
+        </script>
 </body>
 </html>
