@@ -21,17 +21,42 @@
 <body>
 <title>The Hobby Box</title>
 <div data-role="page" id="homepage">
-        <div data-role="header">
-            <a href="Home.htm" data-prefetch="true" rel="external" data-role="button" data-icon="home" data-iconpos="left">Home</a>
-            <a href="Contact.htm" data-prefetch="true" rel="external" data-role="button" data-icon="mail" data-iconpos="right">Contact</a>
-            <h1>The Hobby Box</h1>
-        </div>
+    <div data-role="header">
+        <a href="Home.htm" data-prefetch="true" rel="external" data-role="button" data-icon="home" data-iconpos="left">Home</a>
+        <a href="Contact.htm" data-prefetch="true" rel="external" data-role="button" data-icon="mail" data-iconpos="right">Contact</a>
+        <h1>The Hobby Box</h1>
+     </div>
         
-        <div data-role="title">
-            <h2><center><u>Contact Page</u></center></h2>
-        </div>
+    <div data-role="title">
+        <h2><center><u>Contact Page</u></center></h2>
+    </div>
     
-    <div role="main" class="ui-content"></div>
+<div role="main" class="ui-content">
+    <div data-role="popup" id="instructionPopup" data-dismissible="false" class="ui-content">
+      <p><center>To contact The Hobby Box, please fill every field completely and click "Send"</center></p>
+      <a href="" data-rel="back" data-theme="b" data-role="button">Close</a>
+    </div>
+    <p>Contacts:</br></br>
+        Nicholas Spataro: nick.spataro@fakeemail.com
+    </p>
+    <form action="FormContent.htm" method="post">
+        <div class="ui-field-contain">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" value="" align  />
+        </div>	
+        <div class="ui-field-contain">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" value=""  />
+        </div>
+        <div class="ui-field-contain">
+		    <label for="bio">Message:</label>
+		    <textarea name="Message" id="Message"></textarea>
+        </div>
+        <div class="ui-field-contain">
+            <input type="submit" name="submit" value="Send"  />
+        </div>
+      
+    </form>
     
     <div data-role="footer"  data-position="fixed" data-fullscreen="true" >
         <div data-role="navbar">
