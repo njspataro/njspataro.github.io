@@ -28,11 +28,87 @@
         </div>
         
         <div data-role="title">
-            <hr><h2><center><u>Inventory</u></center></h2><hr>
+            <hr><h2><center><u>Current Inventory</u></center></h2><hr>
         </div>
     
-    <div role="main" class="ui-content"></div>
-    
+    <div role="main" class="ui-content">
+        <div data-role="tabs">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="#Paints">Paints</a></li>
+				<li><a href="#Supplies">Supplies</a></li>
+			</ul>
+			</div>
+        <div id="Paints">  
+        <ul>
+            <li>
+              <img src="download.jpg" class="ui-li-icon" style="width: 50px;"> <a href="#Panel1" data-role="button" style="width:200px;">Games Workshop</a></a>
+                <div data-role="panel" id="Panel1" data-display="overlay">
+                <p>
+              <ul><h2>Games Workshop Paints Inventory</h2>
+                <li>Abaddon Black</li>
+                <li>Clorax White</li>
+                <li>Leadblecher</li>
+                <li>Agrax Earthshade</li>
+                <li>The Fang</li>
+                <li>Mephiston Red</li>
+                <li>Averland Sunset</li>
+              </ul>
+                <p>
+                  <a data-role="button" data-rel="close">Close</a>
+                </p>
+                </div>
+            <li>
+              <img src="download.png" class="ui-li-icon" style="width: 50px;"> <a href="#Panel2" data-role="button" style="width:200px;">Vallejo Paints</a></a> 
+                <div data-role="panel" id="Panel2" data-display="overlay">
+                <p>
+              <ul><h2>Vallejo Paints Inventory</h2>
+                <li>Dead White</li>
+                <li>Pale Flesh</li>
+                <li>Livery Green</li>
+                <li>Filthy Brown</li>
+                <li>Chainmail</li>
+                <li>Polished Gold</li>
+                <li>Heavy Orange</li>
+              </ul>
+                <p>
+                  <a data-role="button" data-rel="close">Close</a>
+                </p>
+                </div>
+            <li>
+                <img src="P3-2.jpg" class="ui-li-icon" style="width: 50px;"> <a href="#Panel3" data-role="button" style="width:200px;">Formula P3</a></a> 
+                <div data-role="panel" id="Panel3" data-display="overlay">
+                <p>
+              <ul><h2>Formula P3 Paints Inventory</h2>
+                <li>Sulfuric Yellow</li>
+                <li>Frostbite</li>
+                <li>Beast Hide</li>
+                <li>Gun Corps Brown</li>
+                <li>Marrow White</li>
+                <li>Coal Black</li>
+                <li>Bootstrap Leather</li>
+              </ul>
+                <p>
+                  <a data-role="button" data-rel="close">Close</a>
+                </p>
+                </div>
+        </div>
+
+        <div id="Supplies">
+            <ul><h2>Supplies</h2>
+                <li>Winsor & Newton Series 7 Size 2 Brush</li>
+                <li>File assortment pack</li>
+                <li>Green Stuff</li>
+                <li>5 Painting Handles</li>
+                <li>Army Painter Stay Wet Pallet</li>
+            </ul>
+        </div>
+
+        <p>Click <a href="Add.htm" data-prefetch="true" rel="external">Here</a> to add items to your inventory.</p>
+
+    </div>
+
+
     <div data-role="footer"  data-position="fixed" data-fullscreen="true" >
         <div data-role="navbar">
             <ul>
