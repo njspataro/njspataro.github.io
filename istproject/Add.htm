@@ -33,6 +33,39 @@
     
     <div role="main" class="ui-content">
 
+        <form>
+            <div class="ui-field-contain">
+                <label for="name">Supply Name:</label>
+                <input id="name" type="text" placeholder="Enter name" />
+            </div>
+            <div class="ui-field-contain">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="paint">Paint</option>
+                    <option value="brush">Brush</option>
+                    <option value="equipment">Equipment</option>
+                    <option value="model">Model</option>
+                    <option value="knife">Knifes</option>
+                    <option value="airbrush">Airbrush</option>
+                    <option value="pallet">Pallet</option>
+                </select>
+            </div>
+            <div class="ui-field-contain">
+                <label for="rating">Quantity:</label>
+                <input type="range" id="quantity" name="quantity" min="0" max="100">
+            </div>
+            <div class="ui-field-contain">
+                <label for="info">Note:</label>
+                <textarea id="info" placeholder="Enter Note">
+                </textarea>
+            </div>
+            <div class="ui-field-contain">
+                <input id="btn" type="button" value="Add to Inventory" />
+            </div>
+        </form>
+
+<br>
+<br>
 
         <a href="#panel" data-role="button" style="width:200px;">Color Reference</a></a> 
                 <div data-role="panel" id="panel" data-display="overlay">
@@ -461,6 +494,11 @@
           </p>
 
         </div>
+
+        
+        <p>Click <a href="Inventory.htm" data-prefetch="true" rel="external">Here</a> to view items in your inventory.</p>
+
+
     </div>
     
     <div data-role="footer"  data-position="fixed" data-fullscreen="true" >
