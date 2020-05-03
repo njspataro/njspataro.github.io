@@ -28,10 +28,22 @@
         </div>
         
         <div data-role="title">
-            <hr><h2><center><u>Upload Page</u></center></h2><hr>
+            <hr><h2><center><u>Image Upload</u></center></h2><hr>
         </div>
     
-    <div role="main" class="ui-content"></div>
+    <div role="main" class="ui-content">
+        <h1>Upload Image to the Slideshow here</h1>
+        <p>Click <a href="Photograhphs.htm" data-prefetch="true" rel="external">Here</a> to go to the Slideshow</p>
+        <form action="/action_page.php">
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+            <button onclick="myFunction()">Submit</button>
+
+            <script>
+                function myFunction() {alert("Cannot Submit at this time! Sorry Try again later =]");}
+            </script>
+        </form>
+    </div>
     
     <div data-role="footer"  data-position="fixed" data-fullscreen="true" >
         <div data-role="navbar">

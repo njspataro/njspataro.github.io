@@ -39,6 +39,14 @@
     <p>Contacts: TheHobbyBox@fakeemail.com</p>
     <hr>
     <form action="FormContent.htm" method="post">
+        <div class="ui-field-contain" align="left" style="width:500px;">
+            <label for="reason">Reason For Contact:</label>
+            <select name="options">
+                <option value="technical">Technical</option>
+                <option value="order">Order</option>
+                <option value="policy">Policy</option>
+            </select>
+        </div>
         <div class="ui-field-contain">
             <label for="name">Your Name (Required):</label><br>
             <span><input type="text" name="name" id="name" value=""></span>
